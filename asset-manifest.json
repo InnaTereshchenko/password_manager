@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/password_manager/static/css/main.d1e976df.chunk.css",
+    "main.js": "/password_manager/static/js/main.bee0e254.chunk.js",
+    "main.js.map": "/password_manager/static/js/main.bee0e254.chunk.js.map",
+    "runtime~main.js": "/password_manager/static/js/runtime~main.bfef69bb.js",
+    "runtime~main.js.map": "/password_manager/static/js/runtime~main.bfef69bb.js.map",
+    "static/js/2.d29b3332.chunk.js": "/password_manager/static/js/2.d29b3332.chunk.js",
+    "static/js/2.d29b3332.chunk.js.map": "/password_manager/static/js/2.d29b3332.chunk.js.map",
+    "index.html": "/password_manager/index.html",
+    "precache-manifest.99721921f80e3e64926d550fcfc5b3ce.js": "/password_manager/precache-manifest.99721921f80e3e64926d550fcfc5b3ce.js",
+    "service-worker.js": "/password_manager/service-worker.js",
+    "static/css/main.d1e976df.chunk.css.map": "/password_manager/static/css/main.d1e976df.chunk.css.map"
+  }
+}
