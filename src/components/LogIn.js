@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-const LogIn = ({ authorization }) => {
+const LogIn = ({ authorization, wrongLogin }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
@@ -46,12 +46,14 @@ const LogIn = ({ authorization }) => {
           <Link to="/register" className="login__link">Register</Link>
         </div>
       </form>
+      <p className={`login__wrong ${wrongLogin}`}>*Wrong email/password</p>
     </div>
   );
 };
 
 LogIn.propTypes = {
   authorization: PropTypes.func.isRequired,
+  wrongLogin: PropTypes.string.isRequired,
 };
 
 export default LogIn;

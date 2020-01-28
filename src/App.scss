@@ -7,7 +7,6 @@ input {
   height: 100vh;
   background: linear-gradient(-45deg, #ee7752, #e73ce7, #23a6d5, #23d5ab);
   background-size: 400%, 400%;
-  //animation: animateBackground 10s ease-in-out infinite;
 
   font-family: "Montserrat", sans-serif;
 
@@ -29,18 +28,6 @@ input {
     align-items: center;
     justify-content: center;
 
-  }
-}
-
-@keyframes animateBackground {
-  0% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0 50%;
   }
 }
 
@@ -79,6 +66,15 @@ input {
     margin-top: 20px;
     display: flex;
     align-items: center;
+  }
+
+  &__wrong {
+    margin-top: 15px;
+    visibility: hidden;
+  }
+
+  &__wrong-active {
+    visibility: visible;
   }
 }
 

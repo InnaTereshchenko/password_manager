@@ -18,6 +18,7 @@ function App() {
   useEffect(() => localStorage.setItem(
     'currentUserId', JSON.stringify(currentUserId)
   ));
+  const [wrongLogin, setWrongLogin] = useState('');
 
   const registerNewUser = (name, username, password) => {
     const newUsers = [
@@ -40,6 +41,9 @@ function App() {
     if (currentU !== undefined) {
       setCurrentUserId(currentU.id);
       history.push('/dashboard');
+      setWrongLogin('');
+    } else {
+      setWrongLogin('login__wrong-active');
     }
   };
 
@@ -104,7 +108,7 @@ function App() {
       </nav>
       <Switch>
         <Route path="/" exact>
-          <LogIn authorization={authorization} />
+          <LogIn authorization={authorization} wrongLogin={wrongLogin} />
         </Route>
         <Route path="/register" exact>
           <Register registerNewUser={registerNewUser} />
