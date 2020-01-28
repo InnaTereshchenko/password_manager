@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/password_manager/precache-manifest.99721921f80e3e64926d550fcfc5b3ce.js"
+  "/password_manager/precache-manifest.0039f914f7ffb13558755f693ac5324b.js"
 );
 
 self.addEventListener('message', (event) => {
