@@ -19,9 +19,9 @@ input {
   }
 
   &__img {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    position: absolute;
+    top: 10px;
+    left: 10px;
   }
 
   &__nav {
@@ -97,6 +97,10 @@ input {
   &__row:hover {
     background-color: #e0e0e0;
     cursor: pointer;
+  }
+
+  &__login {
+    text-align: center;
   }
 }
 

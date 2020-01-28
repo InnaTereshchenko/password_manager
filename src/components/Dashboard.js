@@ -15,7 +15,7 @@ const Dashboard = ({ currentUserId, users, addNewAccount, deleteAccount }) => {
 
   return currentUserId === -1
     ? (
-      <h2>Please, log in</h2>
+      <h2 className="dashboard__login">Please, log in</h2>
     )
     : (
       <section className="dashboard">
